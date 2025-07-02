@@ -13,6 +13,6 @@ sequenceDiagram
         Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
         browser->+server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
         server-->>-browser: [{ "content-type": "application/json", "content": "jj", "date": "2025-7-2"}, ... ]
-        Note right of browser: The browser executes the callback function that renders the notes
+        Note right of browser: The browser executes the callback function inculding redrawNotes that renders the notes
 
 ```
